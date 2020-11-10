@@ -9,12 +9,11 @@ class PhotoViewController: UIViewController {
         }
     }
     
-    func updateUI(with photos: [NetworkService.Photo]) {
-        // update UI
+    func updateUI(with photos: [Photo]) {
+        print("Update UI with photos: \(photos)")
     }
     
     func cachePhotos() {
         try! NetworkService.shared.cachePhotos()
     }
 }
-

@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		18575D7B252E5CBF007101EE /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18575D7A252E5CBF007101EE /* NetworkService.swift */; };
-		186036D5255A9D7F00151C70 /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186036D4255A9D7F00151C70 /* CacheService.swift */; };
+		186036D5255A9D7F00151C70 /* SimpleDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186036D4255A9D7F00151C70 /* SimpleDatabase.swift */; };
+		186036DD255AA00200151C70 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186036DC255AA00200151C70 /* NetworkProvider.swift */; };
+		186036E5255AA18500151C70 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186036E4255AA18500151C70 /* CoreDataService.swift */; };
 		18D69414252E58C8000AE6EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D69413252E58C8000AE6EB /* AppDelegate.swift */; };
 		18D69416252E58C8000AE6EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D69415252E58C8000AE6EB /* SceneDelegate.swift */; };
 		18D69418252E58C8000AE6EB /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D69417252E58C8000AE6EB /* PhotoViewController.swift */; };
@@ -39,7 +41,9 @@
 
 /* Begin PBXFileReference section */
 		18575D7A252E5CBF007101EE /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		186036D4255A9D7F00151C70 /* CacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
+		186036D4255A9D7F00151C70 /* SimpleDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDatabase.swift; sourceTree = "<group>"; };
+		186036DC255AA00200151C70 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		186036E4255AA18500151C70 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		18D69410252E58C8000AE6EB /* iOS-Interview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Interview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D69413252E58C8000AE6EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18D69415252E58C8000AE6EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +104,27 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		186036E9255AA1CA00151C70 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				186036F0255AA25900151C70 /* CoreData */,
+				18D69417252E58C8000AE6EB /* PhotoViewController.swift */,
+				18575D7A252E5CBF007101EE /* NetworkService.swift */,
+				186036DC255AA00200151C70 /* NetworkProvider.swift */,
+				186036D4255A9D7F00151C70 /* SimpleDatabase.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		186036F0255AA25900151C70 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				186036E4255AA18500151C70 /* CoreDataService.swift */,
+				18D6941C252E58C8000AE6EB /* iOS_Interview.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		18D69407252E58C7000AE6EB = {
 			isa = PBXGroup;
 			children = (
@@ -123,14 +148,11 @@
 		18D69412252E58C8000AE6EB /* iOS-Interview */ = {
 			isa = PBXGroup;
 			children = (
-				18575D85252E5D3B007101EE /* Supporting files */,
-				18575D90252E5E0F007101EE /* Resources */,
 				18D69413252E58C8000AE6EB /* AppDelegate.swift */,
 				18D69415252E58C8000AE6EB /* SceneDelegate.swift */,
-				18575D7A252E5CBF007101EE /* NetworkService.swift */,
-				186036D4255A9D7F00151C70 /* CacheService.swift */,
-				18D69417252E58C8000AE6EB /* PhotoViewController.swift */,
-				18D6941C252E58C8000AE6EB /* iOS_Interview.xcdatamodeld */,
+				18575D85252E5D3B007101EE /* Supporting files */,
+				18575D90252E5E0F007101EE /* Resources */,
+				186036E9255AA1CA00151C70 /* Source */,
 			);
 			path = "iOS-Interview";
 			sourceTree = "<group>";
@@ -283,11 +305,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				186036DD255AA00200151C70 /* NetworkProvider.swift in Sources */,
 				18575D7B252E5CBF007101EE /* NetworkService.swift in Sources */,
 				18D69418252E58C8000AE6EB /* PhotoViewController.swift in Sources */,
 				18D6941E252E58C8000AE6EB /* iOS_Interview.xcdatamodeld in Sources */,
+				186036E5255AA18500151C70 /* CoreDataService.swift in Sources */,
 				18D69414252E58C8000AE6EB /* AppDelegate.swift in Sources */,
-				186036D5255A9D7F00151C70 /* CacheService.swift in Sources */,
+				186036D5255A9D7F00151C70 /* SimpleDatabase.swift in Sources */,
 				18D69416252E58C8000AE6EB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
