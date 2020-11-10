@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		18575D7B252E5CBF007101EE /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18575D7A252E5CBF007101EE /* NetworkService.swift */; };
+		186036D5255A9D7F00151C70 /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186036D4255A9D7F00151C70 /* CacheService.swift */; };
 		18D69414252E58C8000AE6EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D69413252E58C8000AE6EB /* AppDelegate.swift */; };
 		18D69416252E58C8000AE6EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D69415252E58C8000AE6EB /* SceneDelegate.swift */; };
 		18D69418252E58C8000AE6EB /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D69417252E58C8000AE6EB /* PhotoViewController.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		18575D7A252E5CBF007101EE /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		186036D4255A9D7F00151C70 /* CacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
 		18D69410252E58C8000AE6EB /* iOS-Interview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Interview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D69413252E58C8000AE6EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18D69415252E58C8000AE6EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				18D69413252E58C8000AE6EB /* AppDelegate.swift */,
 				18D69415252E58C8000AE6EB /* SceneDelegate.swift */,
 				18575D7A252E5CBF007101EE /* NetworkService.swift */,
+				186036D4255A9D7F00151C70 /* CacheService.swift */,
 				18D69417252E58C8000AE6EB /* PhotoViewController.swift */,
 				18D6941C252E58C8000AE6EB /* iOS_Interview.xcdatamodeld */,
 			);
@@ -284,6 +287,7 @@
 				18D69418252E58C8000AE6EB /* PhotoViewController.swift in Sources */,
 				18D6941E252E58C8000AE6EB /* iOS_Interview.xcdatamodeld in Sources */,
 				18D69414252E58C8000AE6EB /* AppDelegate.swift in Sources */,
+				186036D5255A9D7F00151C70 /* CacheService.swift in Sources */,
 				18D69416252E58C8000AE6EB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

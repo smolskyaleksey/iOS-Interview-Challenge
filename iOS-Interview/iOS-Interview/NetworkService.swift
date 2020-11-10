@@ -23,6 +23,6 @@ struct NetworkService {
     }
     
     func cachePhotos() throws {
-        print("Cache \(photos)")
+        try CacheService.cache(photos: photos)
     }
 }
