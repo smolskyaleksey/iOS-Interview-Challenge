@@ -5,8 +5,7 @@ typealias Photo = UIImage
 struct NetworkService {
     static var shared = NetworkService()
     
-    var photos = [Photo]()
-    
+    var photos: [Photo]?
     var urlString: String!
         
     mutating func load(completion: ([Photo]?) -> Void) {
@@ -22,6 +21,8 @@ struct NetworkService {
     }
     
     func cachePhotos() throws {
-        try SimpleDatabase.cache(photos: photos)
+        if let photos = photos {
+            try SimpleDatabase.cache(withPath: urlString, photos: photos)
+        }
     }
 }

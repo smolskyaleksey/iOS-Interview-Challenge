@@ -11,6 +11,8 @@
 		186036D5255A9D7F00151C70 /* SimpleDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186036D4255A9D7F00151C70 /* SimpleDatabase.swift */; };
 		186036DD255AA00200151C70 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186036DC255AA00200151C70 /* NetworkProvider.swift */; };
 		186036E5255AA18500151C70 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186036E4255AA18500151C70 /* CoreDataService.swift */; };
+		18603700255B0FB400151C70 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186036FF255B0FB400151C70 /* Analytics.swift */; };
+		18603708255B1B8600151C70 /* PhotoPreviewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18603707255B1B8600151C70 /* PhotoPreviewer.swift */; };
 		18D69414252E58C8000AE6EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D69413252E58C8000AE6EB /* AppDelegate.swift */; };
 		18D69416252E58C8000AE6EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D69415252E58C8000AE6EB /* SceneDelegate.swift */; };
 		18D69418252E58C8000AE6EB /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D69417252E58C8000AE6EB /* PhotoViewController.swift */; };
@@ -20,6 +22,8 @@
 		18D69423252E58CA000AE6EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D69421252E58CA000AE6EB /* LaunchScreen.storyboard */; };
 		18D6942E252E58CA000AE6EB /* iOS_InterviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6942D252E58CA000AE6EB /* iOS_InterviewTests.swift */; };
 		18D69439252E58CA000AE6EB /* iOS_InterviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D69438252E58CA000AE6EB /* iOS_InterviewUITests.swift */; };
+		18E88B6D255D9BB800C165EE /* MediaPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E88B6C255D9BB800C165EE /* MediaPlayer.swift */; };
+		18E88B74255D9C8400C165EE /* MediaPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E88B73255D9C8400C165EE /* MediaPlayerController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,8 @@
 		186036D4255A9D7F00151C70 /* SimpleDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDatabase.swift; sourceTree = "<group>"; };
 		186036DC255AA00200151C70 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		186036E4255AA18500151C70 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		186036FF255B0FB400151C70 /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
+		18603707255B1B8600151C70 /* PhotoPreviewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPreviewer.swift; sourceTree = "<group>"; };
 		18D69410252E58C8000AE6EB /* iOS-Interview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Interview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D69413252E58C8000AE6EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18D69415252E58C8000AE6EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +65,8 @@
 		18D69434252E58CA000AE6EB /* iOS-InterviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-InterviewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D69438252E58CA000AE6EB /* iOS_InterviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_InterviewUITests.swift; sourceTree = "<group>"; };
 		18D6943A252E58CA000AE6EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E88B6C255D9BB800C165EE /* MediaPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPlayer.swift; sourceTree = "<group>"; };
+		18E88B73255D9C8400C165EE /* MediaPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPlayerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,11 +115,10 @@
 		186036E9255AA1CA00151C70 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				186036FE255B0FA400151C70 /* Analytics */,
 				186036F0255AA25900151C70 /* CoreData */,
-				18D69417252E58C8000AE6EB /* PhotoViewController.swift */,
-				18575D7A252E5CBF007101EE /* NetworkService.swift */,
-				186036DC255AA00200151C70 /* NetworkProvider.swift */,
-				186036D4255A9D7F00151C70 /* SimpleDatabase.swift */,
+				18E88B71255D9BD900C165EE /* Photo */,
+				18E88B72255D9BE400C165EE /* Media */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -123,6 +130,14 @@
 				18D6941C252E58C8000AE6EB /* iOS_Interview.xcdatamodeld */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		186036FE255B0FA400151C70 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				186036FF255B0FB400151C70 /* Analytics.swift */,
+			);
+			path = Analytics;
 			sourceTree = "<group>";
 		};
 		18D69407252E58C7000AE6EB = {
@@ -173,6 +188,27 @@
 				18D6943A252E58CA000AE6EB /* Info.plist */,
 			);
 			path = "iOS-InterviewUITests";
+			sourceTree = "<group>";
+		};
+		18E88B71255D9BD900C165EE /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				18D69417252E58C8000AE6EB /* PhotoViewController.swift */,
+				18575D7A252E5CBF007101EE /* NetworkService.swift */,
+				186036DC255AA00200151C70 /* NetworkProvider.swift */,
+				186036D4255A9D7F00151C70 /* SimpleDatabase.swift */,
+				18603707255B1B8600151C70 /* PhotoPreviewer.swift */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		18E88B72255D9BE400C165EE /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				18E88B6C255D9BB800C165EE /* MediaPlayer.swift */,
+				18E88B73255D9C8400C165EE /* MediaPlayerController.swift */,
+			);
+			path = Media;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,8 +347,12 @@
 				18D6941E252E58C8000AE6EB /* iOS_Interview.xcdatamodeld in Sources */,
 				186036E5255AA18500151C70 /* CoreDataService.swift in Sources */,
 				18D69414252E58C8000AE6EB /* AppDelegate.swift in Sources */,
+				18603708255B1B8600151C70 /* PhotoPreviewer.swift in Sources */,
+				18E88B74255D9C8400C165EE /* MediaPlayerController.swift in Sources */,
 				186036D5255A9D7F00151C70 /* SimpleDatabase.swift in Sources */,
+				18E88B6D255D9BB800C165EE /* MediaPlayer.swift in Sources */,
 				18D69416252E58C8000AE6EB /* SceneDelegate.swift in Sources */,
+				18603700255B0FB400151C70 /* Analytics.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
