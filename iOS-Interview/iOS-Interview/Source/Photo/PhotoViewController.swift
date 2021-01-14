@@ -7,11 +7,12 @@ class BaseViewController: UIViewController {
 class PhotoViewController: BaseViewController {
     var photoPreviewer: PhotoPreviewer?
     var photos = [Photo]()
+    var networkService = NetworkService.shared
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        
-        NetworkService.shared.load { photos in
+        networkService.urlString = "https://i.pinimg.com/564x/da/43/ed/da43ed6a297ec1fb5aedc9b7b6cb7d76"
+        networkService.load { photos in
             photos.map {
                 self.photos = $0
                 self.updateUI(with: $0)
